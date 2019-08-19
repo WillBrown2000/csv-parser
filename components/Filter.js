@@ -1,3 +1,0 @@
-let dateFilter = (date, statsArray) => {
-  
-}
