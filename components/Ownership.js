@@ -7,9 +7,11 @@ let addOwnership = (investorStats, totalShares) => {
 
     let accumulator = []
     for (let item of investorStats) {
-      item['ownership'] = (item['shares']/totalShares*100).toFixed(2)
-      accumulator.push(item)
+      let temp = Object.assign({}, item)
+      temp['ownership'] = (item['shares']/totalShares*100).toFixed(2)
+      accumulator.push(temp)
     }
+    
     return accumulator
 }
 

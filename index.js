@@ -1,12 +1,11 @@
-const csv                    = require('csvtojson')
-const { getInvestorStats }   = require('./components/Stats')
-const { getTotalShares, addOwnership } = require('./components/Ownership')
-const { dateFilter, getTotalCash }         = require('./components/Utils')
-const args                   = process.argv.slice(2)
-const date                   = require('date-and-time')
-
-const testfile                     = args[0]
-const rawDate                      = (args.length > 1 ? args[1] : null)
+const csv                               = require('csvtojson')
+const { getInvestorStats }              = require('./components/Stats')
+const { getTotalShares, addOwnership }  = require('./components/Ownership')
+const { dateFilter, getTotalCash }      = require('./components/Utils')
+const args                              = process.argv.slice(2)
+const date                              = require('date-and-time')
+const testfile                          = args[0]
+const rawDate                           = (args.length > 1 ? args[1] : null)
 
 // check date format
 

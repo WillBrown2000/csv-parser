@@ -13,7 +13,7 @@ This is a utility that takes in a CSV file with investor information and aggrega
     INVESTOR
 
 - Desired output is to standard output
-- Testing/Grading will occur on a Mac/Linux based system.  This was developed on a Mac and due to the differences between line returns on the Mac/Windowns Platforms (e.g. <LF> vs. <CR> + <LF> ), this program may behave differently on a windows based system
+- Testing/Grading will occur on a Mac/Linux based system.  This was developed on a Mac and due to the differences between line returns on the Mac/Windows Platforms (e.g. <LF> vs. <CR> + <LF> ), this program may behave differently on a windows based system
 
 ## Dependencies
 
@@ -27,7 +27,7 @@ You'll need to get node for mac if it's not already installed.  You can find the
 
 https://nodejs.org/en/download/
 
-after that install mocha globally with `npm install -g mocha`
+after that install mocha globally with `npm install -g mocha` (if needed)
 
 ## Usage
 
@@ -55,4 +55,4 @@ Note: you may need to install Mocha, but it should run using the local installat
 
 Generally, speaking one of the larger challenges I've observed with coding is maintenance.  In this case, there were possibly more efficient ways to write the code and it could have been less verbose, but I opted to error on the side of explicit and longer variable names and more of them to make it clear what's happening as opposed to minimizing the actual number of lines or algorithm optimization.  Hence, components are generally broken down into the smallest unit of functionality and then imported into the index file and run systematically.  
 
-I have a preference to not altering global objects, so while it incurs a larger memory cost, the thought is from a functional programming mindset that it's wiser to pass--for example--an array into a function, clone the objects within the array and push them on to a new array, then return the new array where this is practical.  Even those this incurs extra compute and memory cost it prevents state problems when programs get larger.
+I have a preference for not altering global objects, so while it incurs a larger memory cost, the thought is from a functional programming mindset that it's wiser to pass--for example--an array into a function, clone the objects within the array and push them on to a new array, then return the new array where this is practical.  Even those this incurs extra compute and memory cost it prevents state problems when programs get larger.
